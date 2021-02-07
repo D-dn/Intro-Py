@@ -25,6 +25,21 @@
 # print(my_string.upper())
 
 ##################################
-my_string = str(input("Введи строку:"))
+# my_string = str(input("Введи строку:"))
+#
+# print(my_string.lower())
 
-print(my_string.lower())
+
+#################################
+# my_string = str(input("Введи строку:"))
+# if len(my_string) < 5:
+#     print(2 * my_string)
+# else:
+#     print(my_string)
+
+################################
+my_string = str(input("Введи строку:"))
+if len(my_string) < 5:
+    print(my_string + my_string[::-1])
+else:
+    print(my_string)
