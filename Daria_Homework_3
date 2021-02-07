@@ -1,41 +1,41 @@
 ##################################
-# value = int(input("Введи число:"))
-# if value > 100:
-#     new_value = value / 2
-#     print(new_value)
-# else:
-#     value = str(value)
-#     print(value[::-1])
-
-# # ##################################
-# value = int(input("Введи число:"))
-#
-# new_value = 1 if value < 100 else  0
-# print(new_value)
+value = int(input("Введи число:"))
+if value > 100:
+    new_value = value / 2
+    print(new_value)
+else:
+    value = str(value)
+    print(value[::-1])
 
 # ##################################
-# value = int(input("Введи число:"))
-#
-# new_value = True if value < 100 else  False
-# print(new_value)
+value = int(input("Введи число:"))
+
+new_value = 1 if value < 100 else  0
+print(new_value)
 
 ##################################
-# my_string = str(input("Введи строку:"))
-#
-# print(my_string.upper())
+value = int(input("Введи число:"))
 
-##################################
-# my_string = str(input("Введи строку:"))
-#
-# print(my_string.lower())
-
+new_value = True if value < 100 else  False
+print(new_value)
 
 #################################
-# my_string = str(input("Введи строку:"))
-# if len(my_string) < 5:
-#     print(2 * my_string)
-# else:
-#     print(my_string)
+my_string = str(input("Введи строку:"))
+
+print(my_string.upper())
+
+#################################
+my_string = str(input("Введи строку:"))
+
+print(my_string.lower())
+
+
+################################
+my_string = str(input("Введи строку:"))
+if len(my_string) < 5:
+    print(2 * my_string)
+else:
+    print(my_string)
 
 ################################
 my_string = str(input("Введи строку:"))
