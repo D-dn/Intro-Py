@@ -11,7 +11,17 @@
 ##################################
 # 2. Дано целое число (int). Определить сколько нулей в конце этого числа.
 
+my_number = 64500087942000000
+my_str = str(my_number)
+my_str = my_str[::-1]
+my_value = 0
 
+for symbol in my_str:
+    if int(symbol) == 0:
+        my_value = (my_value + 1)
+    elif int(symbol) > 0:
+        break
+print(my_value)
 
 
 # # 3a. Даны списки my_list_1 и my_list_2.
