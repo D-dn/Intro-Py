@@ -73,6 +73,16 @@ print(my_value)
 # # # 6. Дана строка в которой есть числа (разделяются пробелами).
 # # # Например "43 больше чем 34 но меньше чем 56". Найти сумму ВСЕХ ЧИСЕЛ (А НЕ ЦИФР) в этой строке.
 # # # Для данного примера ответ - 133.
+
+my_string = "43 больше чем 34 но меньше чем 56"
+
+import re
+
+my_list = (re.findall(r'\d\d', my_string))
+
+my_calculation = int(my_list[0]) + int(my_list[1]) + int(my_list[2])
+print(my_calculation)
+
 # #
 # my_string = "43 больше чем 34 но меньше чем 56"
 # my_list = []
@@ -98,6 +108,8 @@ print(my_value)
 # #         my_list.append("+")
 # #     # else:
 #     #     pass
+
+
 
 
 # sum(my_list)
