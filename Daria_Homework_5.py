@@ -30,7 +30,7 @@ print(my_value)
 # my_list_1 = [0, 8, 0, 5, 0]
 # my_list_2 = [5, 1, 9, 1, 8]
 # my_result = []
-# my_result.append((my_list_1[1::2]) + (my_list_2[::2]))
+# my_result.append((my_list_1[::2]) + (my_list_2[1::2]))
 # print(my_result)
 
 # # 3b. Даны списки my_list_1 и my_list_2. Создать список my_result в который
