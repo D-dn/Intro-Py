@@ -1,12 +1,10 @@
 ##################################
 # # 1. Дано целое число (int). Определить сколько нулей в этом числе.
-#
-#
-# my_number = 546546128058505050359
-# my_number = str(my_number)
-#
-# result = my_number.count("0")
-# print(result)
+
+my_number = 546546128058505050359
+my_number = str(my_number)
+result = my_number.count("0")
+print(result)
 
 ##################################
 # 2. Дано целое число (int). Определить сколько нулей в конце этого числа.
@@ -54,20 +52,20 @@ print(my_value)
 
 # # 4. Дан список my_list. СОЗДАТЬ НОВЫЙ список new_list у которого первый элемент из my_list
 # # стоит на последнем месте. Если my_list [1,2,3,4], то new_list [2,3,4,1]
-# # ? не пойму, почему 2 квадратных скобки
-# # ? pop - эксперимент, вообще не понимаю
-# my_list = [1, 2, 3, 4]
-# new_list = [my_list.copy()[1:], my_list.copy()[0]]
-# new_list = [my_list.pop(1), my_list.pop(1),  my_list.pop(1), my_list.pop(0)]
-# my_list = my_list.index(1, [0 [, 4] )
+# # ? не пойму, почему 2 квадрат
 
+# my_list = [1, 2, 3, 4]
+# new_list = my_list[1:]
+# new_list.append(my_list[0])
 # print(new_list)
+
 #
 # # 5.Дан список my_list. В ЭТОМ списке первый элемент переставить на последнее место.
 # # [1,2,3,4] -> [2,3,4,1]. Пересоздавать список нельзя! (используйте метод pop)
 #
 # my_list = [1, 2, 3, 4, 5, 8, 9, 11]
-# print(my_list + [my_list.pop(0)])
+# my_list.append(my_list.pop(0))
+# print(my_list)
 
 
 # # # 6. Дана строка в которой есть числа (разделяются пробелами).
