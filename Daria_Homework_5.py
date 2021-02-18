@@ -74,53 +74,13 @@ print(my_value)
 # # # Например "43 больше чем 34 но меньше чем 56". Найти сумму ВСЕХ ЧИСЕЛ (А НЕ ЦИФР) в этой строке.
 # # # Для данного примера ответ - 133.
 
-my_string = "43 больше чем 34 но меньше чем 56"
-
-import re
-
-my_list = (re.findall(r'\d\d', my_string))
-
-my_calculation = int(my_list[0]) + int(my_list[1]) + int(my_list[2])
-print(my_calculation)
-
-# #
 # my_string = "43 больше чем 34 но меньше чем 56"
-# my_list = []
-#
-# try:
-#     my_list.append(int(my_string.split( )))
-#     except(TypeError):
-#         pass
-# for symbol in my_string:
-#     if symbol.isinteger():
-# for symbol in my_string:
-#     if symbol.isinteger():
-#         my_list.append(symbol)
-#     if symbol in " ":
-#         my_list.append("+")
-# print(my_list)
-#
-# #
-# # for symbol in my_string:
-# #     if symbol in "0123456789":
-# #         my_list.append(symbol)
-# #     if symbol in " ":
-# #         my_list.append("+")
-# #     # else:
-#     #     pass
-
-
-
-
-# sum(my_list)
-
+# my_result = []
+# my_string = my_string.split( )
 # for symbol in my_string:
 #     if symbol.isdigit():
-#         my_list.append(symbol)
-#     if symbol.isspace():
-#         my_list.append('+')
-#
-
+#         my_result.append(int(symbol))
+# print(sum(my_result))
 
 # 7. Дана строка my_str. Разделите эту строку на пары из двух символов и поместите эти пары в список.
 # Если строка содержит нечетное количество символов, пропущенный второй символ последней пары должен
