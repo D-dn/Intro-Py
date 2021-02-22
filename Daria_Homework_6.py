@@ -1,4 +1,11 @@
 ##################################################
+# 1. Дан список строк my_list. Создать новый список в который поместить
+# элементы из my_list по следующему правилу:
+# Если строка стоит на нечетном месте в my_list, то ее заменить на
+# перевернутую строку. "qwe" на "ewq".
+# Если на четном - оставить без изменения.
+# Задание сделать с использованием enumerate.
+
 my_list = ['qwe', 'rty', 'uio', 'opd', 'ljh']
 new_list = [0]
 for index, symbol in enumerate(my_list):
@@ -7,3 +14,15 @@ for index, symbol in enumerate(my_list):
     elif index % 2:
         new_list.append(symbol[::-1])
 print(new_list)
+
+##################################################
+# 2. Дан список строк my_list. Создать новый список в который поместить
+# элементы из my_list у которых первый символ - буква "a".
+
+my_list = ['awe', 'rtay', 'uioa', 'aopd', 'lajh']
+new_list = []
+for symbol in my_list:
+    if symbol[0] == "a":
+        new_list.append(symbol)
+print(new_list)
+
