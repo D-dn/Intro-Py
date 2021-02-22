@@ -61,7 +61,7 @@ new_list = my_list[1:]
 new_list.append(my_list[0])
 print(new_list)
 
-#
+
 # # 5.Дан список my_list. В ЭТОМ списке первый элемент переставить на последнее место.
 # # [1,2,3,4] -> [2,3,4,1]. Пересоздавать список нельзя! (используйте метод pop)
 
@@ -85,15 +85,16 @@ print(sum(my_result))
 # 7. Дана строка my_str. Разделите эту строку на пары из двух символов и поместите эти пары в список.
 # Если строка содержит нечетное количество символов, пропущенный второй символ последней пары должен
 # # быть заменен подчеркиванием ('_'). Примеры: 'abcd' -> ['ab', 'cd'], 'abcde' -> ['ab', 'cd', e_']
-# ? снова 2 квадратных скобки
 
-# my_str = "gfhjks;ghjghsdolsdkjp"
-# my_list = []
-# if len(my_str) % 2:
-#    my_str = my_str + '_'
-# import re
-# my_list.append(re.findall(r'..', my_str))
-# print((my_list)[1:-1])
+
+my_str = "gfhjks;glhjghsdls;dfkjkp"
+my_list_1 = []
+if len(my_str) % 2:
+   my_str = my_str + '_'
+for index, symbol in enumerate(my_str):
+   my_list_1.append(my_str[index:(index+2)])
+   my_list = my_list_1[::2]
+print(my_list)
 
 #
 # 8. Дана строка my_str в которой символы не повторяются и два символа l_limit, r_limit,
