@@ -26,3 +26,19 @@ for symbol in my_list:
         new_list.append(symbol)
 print(new_list)
 
+##################################################
+
+
+
+
+
+##################################################
+# 4. Дан список my_list в котором могум быть как строки (type str) так и целые числа (type int).
+# Создать новый список в который поместить только строки из my_list.
+
+my_list = ['dyn', 456, 'fdgds', 123, 'jvgl.']
+new_list = []
+for symbol in my_list:
+    if type(symbol) == str:
+        new_list.append(symbol)
+print(new_list)
