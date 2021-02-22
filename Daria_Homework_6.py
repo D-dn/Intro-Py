@@ -49,3 +49,17 @@ for symbol in my_list:
     if type(symbol) == str:
         new_list.append(symbol)
 print(new_list)
+
+##################################################
+# 5. Дана строка my_str. Создать список в который поместить те символы из my_str,
+# которые встречаются в строке только один раз.
+
+my_str = ";lk;lkkzhjkhhjkjhkjhswe"
+my_list = []
+
+for symbol in my_str:
+    if my_str.count(symbol) == 1:
+        my_list.append(symbol)
+print(my_list)
+
+
