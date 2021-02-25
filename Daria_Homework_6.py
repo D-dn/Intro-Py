@@ -61,7 +61,7 @@ my_set = set(my_str)
 for symbol in my_set:
     if my_str.count(symbol) == 1:
         my_list.append(symbol)
-        print(my_list)
+print(my_list)
 
 # 6. Даны две строки. Создать список в который поместить те символы,
 # которые есть в обеих строках хотя бы раз.
@@ -73,6 +73,21 @@ my_set_1 = set(my_str_1)
 my_set_2 = set(my_str_2)
 
 my_list = [my_set_1.intersection(my_set_2)]
+print(my_list)
+
+# 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
+# # но в каждой только по одному разу.
+# # #
+my_string_1 = 'bbblllac'
+my_string_2 = 'accckb'
+my_set_1 = set(my_string_1)
+my_set_2 = set(my_string_2)
+my_set = my_set_1.union(my_set_2)
+my_list = []
+
+for symbol in my_set:
+    if my_string_1.count(symbol) == 1 and my_string_2.count(symbol) == 1:
+        my_list.append(symbol)
 print(my_list)
 
 
