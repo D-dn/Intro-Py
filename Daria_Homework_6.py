@@ -54,13 +54,14 @@ print(new_list)
 # 5. Дана строка my_str. Создать список в который поместить те символы из my_str,
 # которые встречаются в строке только один раз.
 
-my_str = ";lk;lkkzhjkhhjkjhkjhswe"
-my_list = []
+my_str = "asdfgahfghjkl"
 
-for symbol in my_str:
+my_list = []
+my_set = set(my_str)
+for symbol in my_set:
     if my_str.count(symbol) == 1:
         my_list.append(symbol)
-print(my_list)
+        print(my_list)
 
 # 6. Даны две строки. Создать список в который поместить те символы,
 # которые есть в обеих строках хотя бы раз.
