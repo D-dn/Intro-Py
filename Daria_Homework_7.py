@@ -65,3 +65,16 @@ for key, value in my_dict_1.items():
         new_dict.update({key: value})
 print(new_dict)
 
+# г) Объединить эти два словаря в новый словарь по правилу:
+# если ключ есть только в одном из двух словарей - поместить пару ключ:значение,
+# если ключ есть в двух словарях - поместить пару {ключ: [значение_из_первого_словаря, значение_из_второго_словаря]},
+new_dict_1 = {}
+
+for key, value in my_dict_1.items():
+    if key not in my_list:
+        new_dict_1.update({key: my_dict_1[key]})
+    else:
+        new_dict_1.update({key: [my_dict_1[key],my_dict_2[key]]})
+for key, value in my_dict_2.items():
+    if key not in my_list:
+        new_dict_1.update({key: value})
