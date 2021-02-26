@@ -46,7 +46,17 @@ my_print(my_str)
 
 
 ############################################################
-4
+4) Дан список словарей persons в формате [{"name": "John", "age": 15}, ... ,{"name": "Jack", "age": 45}]
+# а) Напечатать имя самого молодого человека. Если возраст совпадает - напечатать все имена.
+
+my_dict_list = [{"name": "John", "age": 15}, {"name": "Stephen", "age": 25},{"name": "Jack", "age": 45}]
+ages = []
+for index, dictionnary in enumerate(my_dict_list):
+    for key, value in dictionnary.items():
+        if key == "age":
+            ages.append(value)
+            if value == min(ages):
+                 print(dictionnary["name"])
 
 
 # в) Посчитать среднее количество лет всех людей из списка.
