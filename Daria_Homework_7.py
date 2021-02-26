@@ -72,9 +72,9 @@ new_dict_1 = {}
 
 for key, value in my_dict_1.items():
     if key not in my_list:
-        new_dict_1.update({key: my_dict_1[key]})
-    else:
-        new_dict_1.update({key: [my_dict_1[key],my_dict_2[key]]})
+        new_dict_1.update({key: value})
 for key, value in my_dict_2.items():
     if key not in my_list:
         new_dict_1.update({key: value})
+    else:
+        new_dict_1.update({key: [my_dict_1[key], my_dict_2[key]]})
