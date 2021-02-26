@@ -19,6 +19,19 @@ triangle = {"A": (randint(-10,10), randint(-10,10)),
             "c": (randint(-10,10), randint(-10,10))}
 print(triangle)
 
+########################## или ################################## 
+from random import randint
+
+def get_tuple():
+    my_tuple = randint(-10, 10), randint(-10, 10)
+    return my_tuple
+
+triangle = {"A": get_tuple(),
+            "B": get_tuple(),
+            "C": get_tuple()}
+
+print(triangle)
+
 ############################################################
 # 3) Создать функцию my_print, которая принимает в виде параметра строку и печатает ее
 # с тремя символами * вначале и в конце строки.
@@ -30,4 +43,25 @@ my_str = ";jkkl"
 def my_print(my_str):
     print("***" + my_str + "***")
 my_print(my_str)
+
+############################################################
+# 5) Даны два словаря my_dict_1 и my_dict_2.
+# а) Создать список из ключей, которые есть в обоих словарях.
+
+my_dict_1 = {"Какао": "20г", "Сахар": "100г", "Ваниль": "100г", "Масло": "100г"}
+my_dict_2 = {"Сахар": "200г", "Масло": "100г", "Сметана": "100г"}
+my_set_1 = set(my_dict_1)
+my_set_2 = set(my_dict_2)
+my_list = my_set_1.intersection(my_set_2)
+
+# б) Создать список из ключей, которые есть в первом, но нет во втором словаре.
+my_list_2 = list(my_set_1.difference(my_set_2))
+print(my_list_2)
+
+# в) Создать новый словарь из пар {ключ:значение}, для ключей, которые есть в первом, но нет во втором словаре.
+new_dict = {}
+for key, value in my_dict_1.items():
+    if key not in my_dict_2:
+        new_dict.update({key: value})
+print(new_dict)
 
