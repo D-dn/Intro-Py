@@ -57,7 +57,22 @@ for index, dictionnary in enumerate(my_dict_list):
             ages.append(value)
             if value == min(ages):
                  print(dictionnary["name"])
+                    
+# б) Напечатать самое длинное имя. Если длина имени совпадает - напечатать все имена.
+НЕ РАБОТАЕТ, если длина имени совпадает 
+my_dict_list = [{"name": "John", "age": 15}, {"name": "Stephen", "age": 25},{"name": "Jack", "age": 45}]
+len_name = []
+for dictionnary in my_dict_list:
+    for key, value in dictionnary.items():
+        if key == "name":
+            len_name.append((len(value)))
 
+for index, symbol in enumerate(len_name):
+    if symbol == max(len_name):
+
+        my_seq = my_dict_list[index]
+
+print(my_seq["name"])
 
 # в) Посчитать среднее количество лет всех людей из списка.
 my_dict_list = [{"name": "John", "age": 15}, {"name": "Stephen", "age": 52}, {"name": "Jack", "age": 45}]
