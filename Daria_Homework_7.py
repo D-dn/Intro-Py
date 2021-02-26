@@ -44,6 +44,23 @@ def my_print(my_str):
     print("***" + my_str + "***")
 my_print(my_str)
 
+
+############################################################
+4
+
+
+# в) Посчитать среднее количество лет всех людей из списка.
+my_dict_list = [{"name": "John", "age": 15}, {"name": "Stephen", "age": 52}, {"name": "Jack", "age": 45}]
+my_int = 0
+my_numb = len(my_dict_list)
+for dictionnary in my_dict_list:
+    for key, value in dictionnary.items():
+        # print(value)
+            if type(value) == int:
+                my_int += value
+average_age = my_int/my_numb
+print(average_age)
+
 ############################################################
 # 5) Даны два словаря my_dict_1 и my_dict_2.
 # а) Создать список из ключей, которые есть в обоих словарях.
