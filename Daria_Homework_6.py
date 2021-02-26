@@ -7,7 +7,7 @@
 # Задание сделать с использованием enumerate.
 
 my_list = ['qwe', 'rty', 'uio', 'opd', 'ljh']
-new_list = [0]
+new_list = []
 for index, symbol in enumerate(my_list):
     if not index % 2:
         new_list.append(symbol)
