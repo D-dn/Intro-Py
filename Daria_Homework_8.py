@@ -1,3 +1,17 @@
+# 1. Написать функцию, которая генерирует и возвращает строку случайной длинны.
+# Минимальную и максимальную длину строки ограничить с помощью параметров min_limit, max_limit, передаваемых в функцию.
+import random
+import string
+
+
+def create_str(min_limit, max_limit):
+    str_len = random.randint(min_limit, max_limit)
+    my_str = string.ascii_letters[:str_len:]
+    return my_str
+
+
+print(create_str(2, 5))
+
 #################################################################
 # 2. Даны списки names и domains (создать самостоятельно).
 # Написать функцию create_email для генерирования e-mail в формате:
