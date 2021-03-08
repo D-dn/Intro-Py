@@ -48,38 +48,49 @@ my_print(my_str)
 ############################################################
 4) Дан список словарей persons в формате [{"name": "John", "age": 15}, ... ,{"name": "Jack", "age": 45}]
 # а) Напечатать имя самого молодого человека. Если возраст совпадает - напечатать все имена.
-
-my_dict_list = [{"name": "John", "age": 15}, {"name": "Stephen", "age": 25},{"name": "Jack", "age": 45}]
+                    
+my_dict_list = [{"name": "John", "age": 27}, {"name": "Stephen", "age": 25},{"name": "Jack", "age": 45}]
 ages = []
 for index, dictionnary in enumerate(my_dict_list):
     for key, value in dictionnary.items():
         if key == "age":
             ages.append(value)
-            if value == min(ages):
-                 print(dictionnary["name"])
+the_smallest_age = min(ages)
+
+for dictionnary in my_dict_list:
+    if dictionnary["age"] == the_smallest_age:
+        print(dictionnary["name"])
+        
                     
 # б) Напечатать самое длинное имя. Если длина имени совпадает - напечатать все имена.
-my_dict_list = [{"name": "John", "age": 15}, {"name": "Stephen", "age": 25},{"name": "Jack", "age": 45}]
-len_name = []
-for dictionnary in my_dict_list:
-    for key, value in dictionnary.items():
-        if key == "name":
-            len_name.append((len(value)))
 
-for index, symbol in enumerate(len_name):
-    if symbol == max(len_name):
-        print(my_dict_list[index]["name"])
+my_dict_list = [{"name": "Valentin", "age": 15}, {"name": "Stephano", "age": 25},{"name": "Jack", "age": 45}]
+my_name_list = []
+my_len_name = []
+
+for dictionnary in my_dict_list:
+    my_name_list.append(dictionnary["name"])
+    my_len_name.append(len(dictionnary["name"]))
+
+max_len = max(my_len_name)
+
+for name in my_name_list:
+    if len(name) == max_len:
+        print(name)
+        
+
 
 # в) Посчитать среднее количество лет всех людей из списка.
-my_dict_list = [{"name": "John", "age": 15}, {"name": "Stephen", "age": 52}, {"name": "Jack", "age": 45}]
-my_int = 0
-my_numb = len(my_dict_list)
+
+my_dict_list = [{"name": "John", "age": 22}, {"name": "Stephen", "age": 28},{"name": "Jack", "age": 40}]
+ages = []
 for dictionnary in my_dict_list:
     for key, value in dictionnary.items():
-          if type(value) == int:
-                my_int += value
-average_age = my_int/my_numb
-print(average_age)
+        if key == "age":
+            ages.append(value)
+average_age= sum(ages)/len(ages)
+
+print(int(average_age))
 
 ############################################################
 # 5) Даны два словаря my_dict_1 и my_dict_2.
