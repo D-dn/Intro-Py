@@ -1,17 +1,18 @@
 import random
 import string
 
-def create_str(min_limit, max_limit):
-    len_str = random.randint(min_limit, max_limit)
-    alphabet = string.ascii_letters
-    my_str = "".join([random.choice(alphabet) for _ in range(len_str)])
-    return my_str
-
 class EmailGenerator:
 
 
     def __init__(self, ):
         self._email = self.create_email()
+
+
+    def create_str(self, min_limit, max_limit ):
+        len_str = random.randint(min_limit, max_limit)
+        alphabet = string.ascii_letters
+        my_str = "".join([random.choice(alphabet) for _ in range(len_str)])
+        return my_str
 
     @property
 
@@ -19,7 +20,7 @@ class EmailGenerator:
         return self._email
 
     def create_email(self):
-        my_string = create_str(5, 7)
+        my_string = self.create_str(5, 7)
 
         numb = random.randint(100, 999)
 
